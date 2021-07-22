@@ -1,0 +1,6 @@
+site_name: Docs
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Cluster Test: cluster_test.md
