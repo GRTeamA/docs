@@ -14,7 +14,7 @@
     
     
       
-        <title>Cluster Test - Docs</title>
+        <title>Mempool - Docs</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cluster-test" class="md-skip">
+        <a href="#mempool" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cluster Test
+              Mempool
             
           </span>
         </div>
@@ -188,6 +188,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../cluster_test/" class="md-nav__link">
+        Cluster Test
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -200,12 +215,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Cluster Test
+          Mempool
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Cluster Test
+        Mempool
       </a>
       
         
@@ -223,23 +238,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tx_emitter" class="md-nav__link">
-    tx_emitter
-  </a>
-  
-    <nav class="md-nav" aria-label="tx_emitter">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    关键参数
+    结构
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    特点
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core_mempool" class="md-nav__link">
+    core_mempool
+  </a>
+  
+    <nav class="md-nav" aria-label="core_mempool">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    测试逻辑
+  <a href="#indexrs" class="md-nav__link">
+    index.rs
   </a>
   
 </li>
@@ -249,25 +271,51 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#shared_mempool" class="md-nav__link">
+    shared_mempool
+  </a>
+  
+    <nav class="md-nav" aria-label="shared_mempool">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coordinatorrs" class="md-nav__link">
+    coordinator.rs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#broadcast" class="md-nav__link">
+    关于broadcast
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gc" class="md-nav__link">
+    关于gc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    疑问
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mempool/" class="md-nav__link">
-        Mempool
-      </a>
     </li>
   
 
@@ -298,29 +346,77 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tx_emitter" class="md-nav__link">
-    tx_emitter
-  </a>
-  
-    <nav class="md-nav" aria-label="tx_emitter">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    关键参数
+    结构
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    特点
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core_mempool" class="md-nav__link">
+    core_mempool
+  </a>
+  
+    <nav class="md-nav" aria-label="core_mempool">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    测试逻辑
+  <a href="#indexrs" class="md-nav__link">
+    index.rs
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shared_mempool" class="md-nav__link">
+    shared_mempool
+  </a>
+  
+    <nav class="md-nav" aria-label="shared_mempool">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coordinatorrs" class="md-nav__link">
+    coordinator.rs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#broadcast" class="md-nav__link">
+    关于broadcast
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gc" class="md-nav__link">
+    关于gc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    疑问
+  </a>
   
 </li>
       
@@ -337,18 +433,109 @@
               
                 
                 
-                <h1 id="cluster-test">cluster-test</h1>
-<h2 id="tx_emitter">tx_emitter</h2>
-<h3 id="_1">关键参数</h3>
+                <h1 id="mempool">Mempool</h1>
+<h2 id="_1">结构</h2>
+<pre><code>commit a13ca8112c17b1e19a648f6ad4ef8a068aea5fb1 (HEAD -&gt; main)
+Author: Sam Blackshear &lt;shb@fb.com&gt;
+Date:   Thu Jul 15 08:30:08 2021 -0700
+</code></pre>
+<pre><code>      26 text files.
+      26 unique files.
+       0 files ignored.
+
+github.com/AlDanial/cloc v 1.82  T=0.02 s (1169.5 files/s, 285938.5 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Rust                            24            654            664           4925
+TOML                             1              6              0             52
+Markdown                         1             19              0             37
+-------------------------------------------------------------------------------
+SUM:                            26            679            664           5014
+-------------------------------------------------------------------------------
+</code></pre>
+<pre><code>mempool
+├── Cargo.toml
+├── README.md
+└── src
+    ├── core_mempool
+    │   ├── index.rs
+    │   ├── mempool.rs
+    │   ├── mod.rs
+    │   ├── transaction.rs
+    │   ├── transaction_store.rs
+    │   └── ttl_cache.rs
+    ├── counters.rs
+    ├── lib.rs
+    ├── logging.rs
+    ├── shared_mempool
+    │   ├── coordinator.rs
+    │   ├── mod.rs
+    │   ├── network.rs
+    │   ├── peer_manager.rs
+    │   ├── runtime.rs
+    │   ├── tasks.rs
+    │   └── types.rs
+    └── tests
+        ├── common.rs
+        ├── core_mempool_test.rs
+        ├── fuzzing.rs
+        ├── mocks.rs
+        ├── mod.rs
+        ├── multi_node_test.rs
+        ├── node.rs
+        └── shared_mempool_test.rs
+
+4 directories, 26 files
+</code></pre>
+<h2 id="_2">特点</h2>
 <ul>
-<li>workers_per_ac：每个节点对应的worker数量</li>
-<li>accounts_per_client：每个worker将发出的交易数</li>
+<li>创建独立的Tokio Runtime</li>
+<li>将启动三个不同的异步任务<ul>
+<li>coordinator：处理入站网络事件与出站交易广播，使用<strong>BoundedExecutor</strong>限制并发任务数</li>
+<li>gc_coordinator：对所有到达SystemTTL的过期交易进行垃圾回收</li>
+<li>snapshot_job：周期性地对core mempool内存在的交易记录快照，用于观察内部状态</li>
 </ul>
-<h3 id="_2">测试逻辑</h3>
-<p>令节点数量为<strong>n</strong></p>
-<p>参与测试账户数=<strong>n</strong> * <strong>workers_per_ac</strong> * <strong>accounts_per_client</strong></p>
-<p>测试程序对每个节点分配<strong>workers_per_ac</strong>个异步任务，每个异步任务在每个周期中将构造<strong>accounts_per_client</strong>个交易请求，并向该节点的JSON-RPC端口提交交易请求，该过程不断重复直至测试程序结束。</p>
-<p>测试程序在产生<strong>n</strong> * <strong>workers_per_ac</strong>个异步任务后，由<strong>Tokio runtime</strong>负责调度执行（通常为线程池）。</p>
+</li>
+<li>core_mempool 内存中的核心数据结构</li>
+<li>shared_mempool 运行时 </li>
+</ul>
+<h2 id="core_mempool">core_mempool</h2>
+<h3 id="indexrs">index.rs</h3>
+<ul>
+<li>PriorityIndex</li>
+<li>TTLIndex</li>
+<li>TimelineIndex</li>
+<li>ParkingLotIndex</li>
+</ul>
+<h2 id="shared_mempool">shared_mempool</h2>
+<h3 id="coordinatorrs">coordinator.rs</h3>
+<p>处理以下网络事件：</p>
+<ul>
+<li>client_events</li>
+<li>consensus_requests</li>
+<li>state_sync_requests</li>
+<li>mempool_reconfig_events</li>
+<li>scheduled_broadcasts</li>
+<li>events<ul>
+<li>Event::NewPeer</li>
+<li>Event::LostPeer</li>
+<li>Event::Message</li>
+</ul>
+</li>
+</ul>
+<h2 id="broadcast">关于broadcast</h2>
+<p>Event::NewPeer生成，scheduled_broadcasts调度，peer_manager发送</p>
+<h2 id="gc">关于gc</h2>
+<ul>
+<li>SystemTTL gc由gc_coordinator周期性地触发</li>
+<li>expiration time gc在process_consensus_request和process_state_sync_request(commit_txns)时触发</li>
+</ul>
+<h2 id="_3">疑问</h2>
+<ul>
+<li>coordinator中的异步处理逻辑是否合理？（串行处理事件）</li>
+<li>SharedMempool中subscriber模式的用处？</li>
+</ul>
                 
               
               
@@ -368,7 +555,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="../cluster_test/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cluster Test" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -377,26 +564,11 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Cluster Test
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../mempool/" class="md-footer__link md-footer__link--next" aria-label="Next: Mempool" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Mempool
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
